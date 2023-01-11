@@ -7,7 +7,7 @@
     position:fixed;
     top:0;
     left:0;
-    background-image: url('./main-background.jpg');
+    background-image: url('/main-background.jpg');
     background-size: cover;
 }
 .wrapper {
