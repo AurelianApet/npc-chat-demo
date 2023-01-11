@@ -1,29 +1,19 @@
 {
-  "name": "raid-characters",
+  "name": "npc-demo",
   "version": "0.2.6",
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
-    "serve": "vite preview",
-    "lint": "npm run lint:js && npm run lint:prettier",
-    "lint:js": "eslint --cache --ext .js,.jsx ./src",
-    "lint:prettier": "prettier --check \"**/*\" --end-of-line auto"
+    "serve": "vite preview"
   },
   "dependencies": {
-    "buffer": "^6.0.3",
-    "openai": "^3.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "retro-ui": "^0.0.17",
-    "styled-components": "^5.3.6",
-    "vite-react-jsx": "1.1.2"
+    "styled-components": "^5.3.6"
   },
   "devDependencies": {
     "@vitejs/plugin-react-swc": "^3.0.0",
-    "eslint": "^8.30.0",
-    "eslint-plugin-no-inline-styles": "^1.0.5",
-    "eslint-plugin-react": "^7.31.11",
-    "prettier": "^2.3.2",
     "vite": "^4.0.0"
   }
 }
