@@ -296,31 +296,31 @@ export default function App() {
         )}
         <h2>Chat with {name}</h2>
 
-        <div className={styles["chatBox"]}>
+        <Box className={styles["chatBox"]}>
           <div className={styles["messages"]}>
             {messages.map((message, index) => (
               <div key={index}>{message}</div>
             ))}
           </div>
-
-          <form className={styles["send"]} onSubmit={handleSubmit}>
-            <input
+          </Box>
+          <form onSubmit={handleSubmit}>
+            <Input
+            className={styles["message"]}
               autoComplete="off"
               type="text"
-              name="message"
+              name=""
               value={input}
               onInput={handleChange}
               onChange={handleChange}
             />
-            <button
+            <Button
               className={styles["button"]}
               onSubmit={handleSubmit}
               type="submit"
             >
               Send
-            </button>
-          </form>
-        </div>
+            </Button>
+            </form>
       </div>
     </div>
   )
